@@ -1,18 +1,48 @@
-## Getting Started
+# Personal To-Do List Application
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple **Java console-based To-Do List manager** with PostgreSQL database integration.  
+This project allows users to create, update, delete, view, and manage tasks with priorities and due dates.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## Features
+- **Create Task** – Add new tasks with title, description, due date, and priority.
+- **Update Task** – Modify existing tasks.
+- **Delete Task** – Remove tasks.
+- **View All Tasks** – Display all tasks currently stored.
+- **Mark Task as Completed** – Check off tasks.
+- **Filter Tasks by Status** – View only completed or pending tasks.
+- **Sort Tasks** – Sort by priority, due date, or title.
+- **Persistent Storage** – Tasks are saved in a PostgreSQL database.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Technologies Used
+- **Java** (Core, JDBC, Collections, Scanner)
+- **PostgreSQL** (Database storage)
+- **JDBC Driver** (Database connection)
+- **Object-Oriented Design** (Classes: `App`, `Task`, `ToDoList`, `ConnectionToDatabase`, `Priority`)
+---
+## How to run
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Prerequisites
+- Docker & Docker Compose installed
 
-## Dependency Management
+### Steps
+```bash
+# Clone the repository 
+git clone https://github.com/Alex5022/Console-To-Do-List-Application.git
+cd Console-To-Do-List-Application
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+# Build the Docker image and run the database
+docker compose up
+```
+
+Alternatively, download the ZIP file, extract it, open the folder in your terminal or code editor, and run:
+```bash
+docker compose up
+```
+Open that project in a code editor and run it
+
+
+
