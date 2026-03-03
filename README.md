@@ -42,7 +42,7 @@ Alternatively, download the ZIP file, extract it, open the folder in your termin
 ```bash
 docker compose up
 ```
+Open that project in a code editor and run it
 
-Run App.java
 
 
